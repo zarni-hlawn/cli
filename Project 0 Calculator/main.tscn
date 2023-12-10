@@ -1,0 +1,258 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwsx8h6hscjk8"]
+
+[ext_resource type="FontFile" uid="uid://d1u4p5ul7hvoq" path="res://Fonts/Roboto-Bold.ttf" id="1_cxh07"]
+[ext_resource type="FontFile" uid="uid://bli6uxdtn25ms" path="res://Fonts/Roboto-Regular.ttf" id="2_t4v6r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_okulf"]
+bg_color = Color(0.592157, 0.568627, 0.545098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e7ght"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -2.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 350.0
+offset_bottom = 600.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_okulf")
+
+[node name="current_result" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -271.0
+offset_top = -168.0
+offset_right = -10.0
+offset_bottom = -120.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 40
+text = "Current Result"
+
+[node name="previous_result" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -151.0
+offset_top = -197.0
+offset_right = -13.0
+offset_bottom = -173.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_t4v6r")
+theme_override_font_sizes/font_size = 20
+text = "Preivous Result"
+
+[node name="btnAC" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 217.0
+offset_right = 83.0
+offset_bottom = 264.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "AC"
+
+[node name="btnPercent" type="Button" parent="Panel"]
+offset_left = 98.0
+offset_top = 216.0
+offset_right = 162.0
+offset_bottom = 263.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "%"
+
+[node name="btnNum7" type="Button" parent="Panel"]
+offset_left = 21.0
+offset_top = 293.0
+offset_right = 85.0
+offset_bottom = 340.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "7"
+
+[node name="btnDivide" type="Button" parent="Panel"]
+offset_left = 181.0
+offset_top = 216.0
+offset_right = 245.0
+offset_bottom = 263.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "/"
+
+[node name="btnDelete" type="Button" parent="Panel"]
+offset_left = 260.0
+offset_top = 215.0
+offset_right = 324.0
+offset_bottom = 262.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "DEL"
+
+[node name="btnNum8" type="Button" parent="Panel"]
+offset_left = 100.0
+offset_top = 292.0
+offset_right = 164.0
+offset_bottom = 339.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "8"
+
+[node name="btnNum4" type="Button" parent="Panel"]
+offset_left = 22.0
+offset_top = 369.0
+offset_right = 86.0
+offset_bottom = 416.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "4"
+
+[node name="btnNum5" type="Button" parent="Panel"]
+offset_left = 101.0
+offset_top = 368.0
+offset_right = 165.0
+offset_bottom = 415.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "5"
+
+[node name="btnNum1" type="Button" parent="Panel"]
+offset_left = 23.0
+offset_top = 446.0
+offset_right = 87.0
+offset_bottom = 493.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "1"
+
+[node name="btnNum6" type="Button" parent="Panel"]
+offset_left = 184.0
+offset_top = 368.0
+offset_right = 248.0
+offset_bottom = 415.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "6"
+
+[node name="btnNum2" type="Button" parent="Panel"]
+offset_left = 102.0
+offset_top = 445.0
+offset_right = 166.0
+offset_bottom = 492.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "2"
+
+[node name="btnMinus" type="Button" parent="Panel"]
+offset_left = 263.0
+offset_top = 367.0
+offset_right = 327.0
+offset_bottom = 414.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "-"
+
+[node name="btnNum3" type="Button" parent="Panel"]
+offset_left = 185.0
+offset_top = 445.0
+offset_right = 249.0
+offset_bottom = 492.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "3"
+
+[node name="btnPlus" type="Button" parent="Panel"]
+offset_left = 264.0
+offset_top = 444.0
+offset_right = 328.0
+offset_bottom = 491.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "+"
+
+[node name="btnNum9" type="Button" parent="Panel"]
+offset_left = 183.0
+offset_top = 292.0
+offset_right = 247.0
+offset_bottom = 339.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "9"
+
+[node name="btnMultiply" type="Button" parent="Panel"]
+offset_left = 262.0
+offset_top = 291.0
+offset_right = 326.0
+offset_bottom = 338.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "X"
+
+[node name="btnNum0" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 521.0
+offset_right = 168.0
+offset_bottom = 568.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "0
+"
+
+[node name="btnDot" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 521.0
+offset_right = 250.0
+offset_bottom = 568.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "."
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 265.0
+offset_top = 520.0
+offset_right = 329.0
+offset_bottom = 567.0
+theme_override_fonts/font = ExtResource("1_cxh07")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7ght")
+text = "="
