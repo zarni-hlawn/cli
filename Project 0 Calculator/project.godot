@@ -21,6 +21,45 @@ window/size/viewport_width=350
 window/size/viewport_height=600
 window/size/resizable=false
 
+[input]
+
+1={
+"deadzone": 0.5,
+"events": []
+}
+2={
+"deadzone": 0.5,
+"events": []
+}
+3={
+"deadzone": 0.5,
+"events": []
+}
+4={
+"deadzone": 0.5,
+"events": []
+}
+5={
+"deadzone": 0.5,
+"events": []
+}
+6={
+"deadzone": 0.5,
+"events": []
+}
+7={
+"deadzone": 0.5,
+"events": []
+}
+8={
+"deadzone": 0.5,
+"events": []
+}
+9={
+"deadzone": 0.5,
+"events": []
+}
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
