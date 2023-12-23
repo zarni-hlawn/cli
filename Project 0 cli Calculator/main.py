@@ -1,5 +1,5 @@
 # This is the cli version of the "Project 0 cli Calculator" 
-# Official Repository - https://github.com/zarni-hlawn/17 
+# Official Repository - https://github.com/zarni-hlawn/cli 
 
 from rich import print
 
